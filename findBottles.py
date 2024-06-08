@@ -8,8 +8,6 @@ import argparse
 import sys
 import time
 import RPi.GPIO as GPIO
-import firebase_admin
-from firebase_admin import credentials
 import datetime
 
 # Hardware imports and setup
@@ -120,7 +118,6 @@ class UltrasonicSensor:
 
 # Define paths
 TF_MODEL_FILE_PATH = "model.tflite"
-class_names_file = "./rs/labels.txt"
 # GPIO.setmode(GPIO.BCM)
 
 ON = True
